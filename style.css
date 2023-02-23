@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+
+/* || RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* || Variables */
+
+:root {
+  /* FONTS */
+  --FF: "Poppins", "Ubuntu", sans-serif;
+  --BG-COLOR: #0f1620;
+  --BG-LIGHT-COLOR: #20232c;
+  --ACCENT-COLOR: #7fc99c;
+  --PRIMARY-TEXT-COLOR: #fff;
+  --SECONDARY-TEXT-COLOR: #6c82a9;
+}
+
+/* || General Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--BG-COLOR);
+  color: var(--PRIMARY-TEXT-COLOR);
+  font-family: var(--FF);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--BG-LIGHT-COLOR);
+  padding: 0.5rem 1rem;
+}
+
+.header__logo {
+  border-radius: 50%;
+}
+
+section {
+  height: calc(100vh - 50px);
+}
+.main__section {
+  display: flex;
+  z-index: 1;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__h1 {
+  font-size: max(5rem, 10vh);
+  color: var(--ACCENT-COLOR);
+}
+.main__h4 {
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+}
